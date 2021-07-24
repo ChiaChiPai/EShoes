@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { useRouter } from 'vue-router'
-import { useI18n } from 'vue-i18n'
 
 const name = ref('')
 
@@ -9,8 +8,6 @@ const go = () => {
   if (name.value)
     router.push(`/hi/${encodeURIComponent(name.value)}`)
 }
-
-const { t } = useI18n()
 </script>
 
 <template>
@@ -24,7 +21,7 @@ const { t } = useI18n()
       </a>
     </p>
     <p>
-      <em class="text-sm opacity-75">{{ t('intro.desc') }}</em>
+      <em class="text-sm opacity-75">intro.desc</em>
     </p>
 
     <div class="py-4" />
@@ -32,8 +29,8 @@ const { t } = useI18n()
     <input
       id="input"
       v-model="name"
-      :placeholder="t('intro.whats-your-name')"
-      :aria-label="t('intro.whats-your-name')"
+      :placeholder="'intro.whats-your-name'"
+      :aria-label="'intro.whats-your-name'"
       type="text"
       autocomplete="false"
       @keydown.enter="go"
@@ -44,7 +41,7 @@ const { t } = useI18n()
       border="~ rounded gray-200 dark:gray-700"
       outline="none active:none"
     >
-    <label class="hidden" for="input">{{ t('intro.whats-your-name') }}</label>
+    <label class="hidden" for="input">'intro.whats-your-name</label>
 
     <div>
       <button
@@ -52,7 +49,7 @@ const { t } = useI18n()
         :disabled="!name"
         @click="go"
       >
-        {{ t('button.go') }}
+        button.go
       </button>
     </div>
   </div>

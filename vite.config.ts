@@ -7,7 +7,6 @@ import ViteIcons, { ViteIconsResolver } from 'vite-plugin-icons'
 import ViteComponents from 'vite-plugin-components'
 import Markdown from 'vite-plugin-md'
 import WindiCSS from 'vite-plugin-windicss'
-import VueI18n from '@intlify/vite-plugin-vue-i18n'
 import Prism from 'markdown-it-prism'
 // @ts-expect-error missing types
 import LinkAttributes from 'markdown-it-link-attributes'
@@ -77,12 +76,6 @@ export default defineConfig({
     // https://github.com/antfu/vite-plugin-windicss
     WindiCSS({
       safelist: markdownWrapperClasses,
-    }),
-    // https://github.com/intlify/vite-plugin-vue-i18n
-    VueI18n({
-      runtimeOnly: true,
-      compositionOnly: true,
-      include: [path.resolve(__dirname, 'locales/**')],
     }),
   ],
 

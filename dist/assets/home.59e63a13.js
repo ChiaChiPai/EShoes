@@ -1,0 +1,1 @@
+import{a as t}from"./app.423d628a.js";import{r as a,o as e,c as r,a as o}from"./vendor.91d24c70.js";const s={},c={class:"px-4 py-10 text-center text-gray-700 dark:text-gray-200"},n=o("div",{class:"mt-5 mx-auto text-center opacity-25 text-sm"}," [Home Layout] ",-1);s.render=function(s,m){const p=a("router-view"),x=t;return e(),r("main",c,[o(p),o(x),n])};export default s;
