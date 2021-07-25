@@ -3,6 +3,10 @@
 
 declare module 'vue' {
   export interface GlobalComponents {
+    ALayout: typeof import('ant-design-vue/es')['Layout']
+    ALayoutContent: typeof import('ant-design-vue/es')['LayoutContent']
+    ALayoutFooter: typeof import('ant-design-vue/es')['LayoutFooter']
+    ALayoutHeader: typeof import('ant-design-vue/es')['LayoutHeader']
     CarbonCampsite: typeof import('virtual:vite-icons/carbon/campsite')['default']
     CarbonDicomOverlay: typeof import('virtual:vite-icons/carbon/dicom-overlay')['default']
     CarbonLanguage: typeof import('virtual:vite-icons/carbon/language')['default']
@@ -11,8 +15,17 @@ declare module 'vue' {
     CarbonPedestrian: typeof import('virtual:vite-icons/carbon/pedestrian')['default']
     CarbonSun: typeof import('virtual:vite-icons/carbon/sun')['default']
     CarbonWarning: typeof import('virtual:vite-icons/carbon/warning')['default']
+    'Clarity:shoppingCartSolid': typeof import('virtual:vite-icons/clarity/shopping-cart-solid')['default']
     Footer: typeof import('./src/components/Footer.vue')['default']
+    Header: typeof import('./src/components/Header.vue')['default']
+    'Ic:baselineKeyboardArrowDown': typeof import('virtual:vite-icons/ic/baseline-keyboard-arrow-down')['default']
+    'Mdi:alphaLBox': typeof import('virtual:vite-icons/mdi/alpha-l-box')['default']
+    'Ph:heartFill': typeof import('virtual:vite-icons/ph/heart-fill')['default']
+    'Ph:heartLight': typeof import('virtual:vite-icons/ph/heart-light')['default']
+    'Ph:userFill': typeof import('virtual:vite-icons/ph/user-fill')['default']
+    'Ps:cartSupermarket': typeof import('virtual:vite-icons/ps/cart-supermarket')['default']
     README: typeof import('./src/components/README.md')['default']
+    'Vaadin:cart': typeof import('virtual:vite-icons/vaadin/cart')['default']
   }
 }
 
