@@ -1,7 +1,8 @@
 <template>
-  <main class="md:container mx-auto px-4 py-2 text-center">
+  <div class="py-2 text-center">
     <Header />
+    <BreadCrumb />
     <router-view />
     <Footer />
-  </main>
+  </div>
 </template>
